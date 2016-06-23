@@ -13,7 +13,7 @@ object Exercise {
   //Infinite repeat of x
   def repeat(x: Int): List[Int] = ???
 
-  // Sum
+  // sum
   def sum(xs: List[Int]) : Int = ???
 
   //replicate msg n times
@@ -23,7 +23,7 @@ object Exercise {
 
   def reverse(xs: List[String]) : List[String] = ???
 
-  def contains(xs: List[String]) : Boolean = ???
+  def contains(xs: List[String], elem: String) : Boolean = ???
 
   //take n first elems from xs
   def take(n: Int, xs: List[String]) : List[String] = ???
