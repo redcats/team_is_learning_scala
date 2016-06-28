@@ -98,8 +98,8 @@ object Exercise {
   def take2(n: Int, xs: List[String]) : List[String] = {
     @tailrec
     def takeRec(index: Int, xs: List[String], acc: List[String]) : List[String] = xs match {
-      case _ if index <= 0 => acc
-      case Nil => acc
+      case _ if index <= 0 => acc.reverse
+      case Nil => acc.reverse
       case h::t => takeRec(index - 1, t, h :: acc)
     }
 
