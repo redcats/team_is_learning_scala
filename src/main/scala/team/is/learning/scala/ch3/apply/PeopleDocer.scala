@@ -45,6 +45,6 @@ object MyApp {
     println("badge " + p4.badge)
     //An that's why it's working : no need of new
     val s = Set("Dupont", "Durant")
-    println(s("salah eddine"))
+    println(s.apply("salah eddine"))
   }
 }

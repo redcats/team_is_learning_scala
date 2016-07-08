@@ -17,7 +17,16 @@ object Usage {
     //Pattern partout
     val Colleague(name) = create()
     println(name)
+
+    val r = exemple()
+    println(r._2)
+
+    val (os, distro) = exemple()
+
+    println(distro)
   }
+
+  def exemple() : (String, String) = ("linux", "debian")
 
   def wathToDo(p: Person): Unit = p match {
     case Colleague(n) => println(s"Salut $n")

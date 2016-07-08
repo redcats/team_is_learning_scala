@@ -15,6 +15,6 @@ object Exercise extends App {
   // Some(x) == Ok(x)
   // None == Ko
   // Make Perhaps functor and Monad
-   
+
 
 }

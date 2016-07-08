@@ -40,7 +40,8 @@ object Concept {
 
   //for comprension
   val r = for {
-    r1 <- incrRealWorld(2)
+    r1 <- incrRealWorld(2);
+    if r1 > 10
     r2 <- doubleRealWorld(r1)
   } yield r2
 

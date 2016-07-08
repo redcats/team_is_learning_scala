@@ -26,6 +26,9 @@ object Foldable extends App {
     loop(1)( m)( _ * _)
   }
 
+
+
+
   def foldLeft[A,B](z: B)(m : List[A])(op: (B, A) => B): B = m match {
     case Nil => z
     case h::t => foldLeft(op(z, h))(t)(op)
@@ -42,7 +45,15 @@ object Foldable extends App {
   }
 
 
-  def product(m: List[Int]) : Int = foldRight(1)(m)((x, acc) => x * acc)
+
+
+  def product(m: List[Int]) : Int = foldRight(1)(m)((e, acc) => acc * e)
+
+  def accumulate(acc: Int, e: Int )  = if(e > acc)  e else acc
+
+
+
+
 
 
   val numbers =  1 to 4 toList
