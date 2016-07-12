@@ -10,6 +10,8 @@ object Exercise extends App {
   //Exo 2 : Define an extractor for email from (id@domain)
   //Add a class
 
+
+
   //Ex3 : Define Monad Option, we will Call it Perhaps
   // For equivalence
   // Some(x) == Ok(x)
