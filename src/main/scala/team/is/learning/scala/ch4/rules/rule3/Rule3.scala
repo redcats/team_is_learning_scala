@@ -10,7 +10,7 @@ object Rule3 extends App {
 
    val d = Developer(123)
 
-  //persist(d) : Won't compile
+  //persist(d)
 
 
   val e : Employee = d

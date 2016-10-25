@@ -9,7 +9,7 @@ package object use {
     def lang : T
   }
 
-  
+
 
 
 }

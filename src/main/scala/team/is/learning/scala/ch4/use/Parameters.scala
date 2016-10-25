@@ -14,11 +14,14 @@ object Parameters extends App {
 
 
   import Preambule._
+
   sayHello("Bienvenue")
 
   //Use of imlicitly[T] : ask compiler to look for an implicit definition of type T
 
 
   sayHello2("Bienvenue")
+
+  sayHello2("Bienvenue")(Lang("1"), Specific("1"))
 
 }

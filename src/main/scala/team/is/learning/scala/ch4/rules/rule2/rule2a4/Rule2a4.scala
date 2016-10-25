@@ -8,7 +8,6 @@ object Rule2a4 extends App {
 
   //package object
 
-
   val x = external.Calculation.count()
 
   def persistCount(x: Int): Unit = {

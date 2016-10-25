@@ -2,7 +2,7 @@ package team.is.learning.scala.ch4.use
 
 import team.is.learning.scala.ch4.external
 
-object ExpectedType {
+object ExpectedType extends App {
   //Implicit conversion to an expected type
   //defines implicit conversions that convert “smaller”  types to “larger” ones
 
@@ -13,7 +13,7 @@ object ExpectedType {
   }
 
   //Solution  : Implicit conversion explicit
-  implicit def convert(r: String): Int = Integer.valueOf(r)
+  implicit def convert(r: String): Int = 12
 
   persistCount(x)
 }

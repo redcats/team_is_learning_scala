@@ -14,8 +14,11 @@ object Rule1 extends App {
   }
 
   //Solution  : Implicit conversion explicit
-  implicit def convert(r: String): Int = Integer.valueOf(r)
+  implicit def balbal(r: String): Int = Integer.valueOf(r)
 
-  persistCount(x)
+
+  def call(): Unit = {
+    persistCount(x)
+  }
 
 }

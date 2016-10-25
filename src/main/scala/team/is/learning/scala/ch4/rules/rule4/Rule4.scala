@@ -8,6 +8,7 @@ object Rule4 extends App {
     new Person(x.id)
   }
   def persist(x: Person) = println(s"${x.id}")
+
   val e = new Employee(1234)
   persist(e)
 
